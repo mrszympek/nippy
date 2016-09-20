@@ -1,0 +1,63 @@
+.about {
+  background-color: $light-blue;
+  padding: 60px 0;
+
+
+  @include mq(desktop) {
+    padding: 120px 0;
+  }
+
+
+  .about-text {
+    align-self: center;
+    font-family: "Open Sans", sans-serif;
+    padding: 0 20px;
+
+    @include mq(tablet) {
+      width: 50%;
+      padding-right: 10px;
+      margin-right: 50px;
+    }
+
+    @include mq(desktop) {
+      width: 50%;
+      padding-right: 80px;
+      padding-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 33px;
+      margin-bottom: 31px;
+    }
+
+    h4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #666666;
+      letter-spacing: 0px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666666;
+      line-height: 24px;
+    }
+  }
+
+  .about-images {
+    padding: 40px 20px 0;
+
+
+    @include mq(tablet) {
+      align-self: center;
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+
+    }
+  }
+
+}

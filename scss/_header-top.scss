@@ -1,0 +1,132 @@
+.header {
+  //height: 750px;
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .nav {
+
+    padding: 15px;
+
+    @include mq(desktop) {
+      padding: 29px;
+    }
+
+    .logo {
+      display: block;
+      margin-bottom: 20px;
+
+      @include mq(tablet) {
+        margin: inherit;
+        display: inline-block;
+      }
+
+      img {
+        height: 26px;
+      }
+    }
+
+    .links {
+      text-align: center;
+
+      @include mq(tablet) {
+        text-transform: uppercase;
+        font-family: AppleSystemUIFont;
+        float: right;
+        line-height: 26px;
+      }
+      ul {
+
+        li {
+          display: inline-block;
+          list-style: none;
+          padding: 10px;
+
+          @include mq(desktop) {
+            padding: 0 16px;
+
+          }
+          a {
+            letter-spacing: 1px;
+            font-size: 12px;
+            color: #333333;
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+
+
+.intro {
+  margin-top: 15%;
+  text-align: center;
+  @include mq(desktop) {
+    margin-top: 185px;
+  }
+
+  h1 {
+    font-family: PlayfairDisplay-Regular;
+    margin-bottom: 10px;
+    color: #1D1D1D;
+    font-size: 50px;
+
+    @include mq(desktop) {
+      font-size: 80px;
+    }
+  }
+
+  p {
+    font-family: OpenSans;
+    color: #1D1D1D;
+    letter-spacing: 0px;
+    font-size: 16px;
+    margin: 20px 40px;
+
+    @include mq(tablet){
+      margin: 0 20.5%;
+    }
+
+    @include mq(desktop) {
+      font-size: 18px;
+      padding-bottom: 46px;
+      line-height: 28px;
+    }
+  }
+
+  .button {
+    margin-top: 70px;
+    a {
+      padding: 20px 42.5px;
+      border-radius: 100px;
+      background: #1006FF;
+      font-size: 12px;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      line-height: 12px;
+      text-decoration: none;
+    }
+  }
+
+  .scroll {
+    padding: 50px;
+    @include mq(desktop) {
+      padding: 155px 0 38px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

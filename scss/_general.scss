@@ -1,5 +1,42 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  p{
+    font-size: 14px;
+  }
+}
+
+.wrap-main {
+  @include mq(desktop) {
+    padding: 0 135px;
+  }
+}
+
+.wrap-wide {
+
+  @include mq(tablet){
+    padding: 0 30px;
+  }
+
+  @include mq(desktop) {
+    padding: 0 10%;
+  }
+}
+
+.holder{
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tablet){
+    flex-direction: row;
+  }
+}
+

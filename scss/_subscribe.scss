@@ -1,0 +1,66 @@
+.subscribe {
+
+  .left-map {
+    min-width: 50%;
+    background-color: #cccccc;
+    background-image: url(/img/subscribe.jpg);
+    background-position: center right;
+  }
+  .sub-right {
+    margin: 60px 20px;
+    @include mq(desktop) {
+      margin: 106px 134px 117px 116px;
+    }
+
+    h3 {
+      font-size: 33px;
+      font-weight: bold;
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 47px;
+    }
+
+    span {
+      font-family: PlayfairDisplay-Regular, sans-serif;
+      font-size: 20px;
+      color: #666666;
+      letter-spacing: 0;
+      line-height: 30px;
+    }
+
+    p {
+
+      margin-top: 32px;
+      margin-bottom: 50px;
+      font-family: OpenSans, sans-serif;
+      font-size: 14px;
+      color: #666666;
+      line-height: 24px;
+    }
+
+  }
+
+  .subscribe-button {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #232323;
+    border-radius: 100px;
+
+    #text {
+      height: 48px;
+      margin-left: 50px;
+      color: #cccccc;
+
+    }
+
+    #submit {
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      background-color: #1006FF;
+      width: 150px;
+      color: #ffffff;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+  }
+}

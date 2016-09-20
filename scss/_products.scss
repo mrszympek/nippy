@@ -1,0 +1,23 @@
+.products {
+  padding-top: 106px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 33px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: black;
+    }
+
+  }
+
+}
