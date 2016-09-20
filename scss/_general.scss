@@ -34,7 +34,6 @@ body {
 .holder{
   display: flex;
   flex-direction: column;
-
   @include mq(tablet){
     flex-direction: row;
   }
