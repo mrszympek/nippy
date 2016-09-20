@@ -4,7 +4,7 @@
     min-width: 50%;
     background-color: #cccccc;
     background-image: url(../img/subscribe.jpg);
-    background-position: center right;
+    background-position: top;
   }
   .sub-right {
     margin: 60px 20px;
@@ -49,6 +49,8 @@
       height: 48px;
       margin-left: 50px;
       color: #cccccc;
+      font-size: 20px;
+      width: 50%;
 
     }
 
@@ -62,5 +64,8 @@
       text-transform: uppercase;
     }
 
+    input:focus{
+      outline: none;
+    }
   }
 }
