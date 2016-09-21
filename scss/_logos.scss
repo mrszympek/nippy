@@ -1,0 +1,33 @@
+.logos {
+  background-color: $light-blue;
+  padding: 20px;
+
+  @include mq(tablet){
+    padding: 100px 0;
+  }
+  
+  ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include mq(desktop){
+      padding: 0 190px;
+    }
+
+    li{
+      padding: 20px 0;
+      list-style: none;
+      flex-basis: 50%;
+      text-align: center;
+
+      @include mq(tablet){
+        flex-basis: 33%;
+      }
+
+      @include mq(desktop){
+        flex-basis: 16.6%;
+      }
+    }
+  }
+}
