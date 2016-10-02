@@ -45,12 +45,16 @@
     border: 1px solid #232323;
     border-radius: 100px;
 
+
     #text {
       height: 48px;
       margin-left: 50px;
       color: #cccccc;
-      font-size: 20px;
       width: 50%;
+
+      @include mq(desktop) {
+        font-size: 16px;
+      }
 
     }
 
@@ -62,6 +66,10 @@
       color: #ffffff;
       font-size: 12px;
       text-transform: uppercase;
+      font-weight: bold;
+      -webkit-appearance: none;
+
+
     }
 
     input:focus{

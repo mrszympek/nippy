@@ -1,0 +1,45 @@
+footer{
+  background-color: #232323;
+  font-size: 14px;
+  font-family: OpenSans, sans-serif;
+
+
+  .holder{
+    background-color: $black;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+
+    @include mq(tablet){
+      margin: 94px 0 69px;
+      justify-content: space-around;
+
+    }
+
+    .footer-box{
+      padding: 10px;
+
+      img{
+        padding: 11px;
+      }
+    }
+
+    .footer-box:last-child{
+      padding-top: 50px;
+
+      @include mq(desktop){
+        padding: inherit;
+      }
+    }
+  }
+
+  .credit {
+    text-align: center;
+    margin-bottom: 45px;
+    color: #cccccc;
+
+  }
+}
+
