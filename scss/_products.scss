@@ -1,23 +1,43 @@
-.products {
-  padding-top: 106px;
-  font-family: Montserrat, sans-serif;
-  font-weight: bold;
+.products{
+  padding: 121px 0;
 
-  .top-nav {
+
+  .menu-products{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-
-    h3 {
+    padding-top: 15px;
+    padding-bottom: 36px;
+    p{
       font-size: 33px;
+      font-family: Montserrat,sans-serif;
+      font-weight: bold;
     }
 
-    a {
+    a{
       text-decoration: none;
-      font-size: 14px;
       color: black;
+      font-size: 14px;
+      align-self: center;
     }
-
   }
 
+  .gallery{
+
+
+
+    .product-box{
+      position: relative;
+      width: 25%;
+      overflow: hidden;
+      background: #4679BD;
+    }
+
+    .product-box::before{
+      content: ' ';
+      padding: 100%;
+      display: block;
+    }
+
+
+  }
 }

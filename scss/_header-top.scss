@@ -8,7 +8,7 @@
   .nav {
 
     padding: 15px;
-
+    
     @include mq(desktop) {
       padding: 29px;
     }
@@ -18,8 +18,12 @@
       margin-bottom: 20px;
 
       @include mq(tablet) {
+        padding-top: 10px;
         margin: inherit;
         display: inline-block;
+      }
+      @include mq(desktop){
+        padding-top: 0;
       }
 
       img {
@@ -28,9 +32,10 @@
     }
 
     .links {
-      text-align: center;
+      display: none;
 
       @include mq(tablet) {
+        display: block;
         text-transform: uppercase;
         font-family: AppleSystemUIFont;
         float: right;
